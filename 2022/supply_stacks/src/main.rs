@@ -12,14 +12,6 @@ struct Move {
     query: Vec<i32>
 }
 
-impl FromStr for Stacks {
-    type Err = ();
-
-    fn from_str(s: &str) -> Result<Self, Self::Err> {
-        Ok(Stacks{ stacks: Vec::new()})
-    }
-}
-
 impl FromStr for Move {
     type Err = ();
 
